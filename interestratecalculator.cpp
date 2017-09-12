@@ -22,14 +22,30 @@ int main()
         //return 0;
 {
     float a;
-    float p = 10000;
-    float r = .01;
+    float p = 10000; // is it a fixed value ??? or can be an imput from the user ??
+    float r = .01; // use or ist an argument to the pow function which can be given as  1.001
+     // you dont need r as its constant 
+    // what about 31 days month
+    counter =0;
+     cin>> month;
+    switch(month)
+    {
+        case 1:
+            counter =31;
+            break;
+        case 2:
+            counter= 32
+            break;
+            .......
+            
+            
+    }
     
-    for (int day =1 ; day <=30; day ++) {
+    for (int day =1 ; day <=counter; day ++) {
        a = p * pow(1+r, day);
     
        cout << day << " " << a << endl;
        }
-
+    }
 
     return 0;
